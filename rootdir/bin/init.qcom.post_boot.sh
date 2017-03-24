@@ -87,6 +87,11 @@ echo 4-7     > /dev/cpuset/foreground/boost/cpus
 echo 0-2,4-7 > /dev/cpuset/foreground/cpus
 echo 0-7     > /dev/cpuset/top-app/cpus
 
+# Configure default schedTune value for foreground/top-app
+echo 1 > /dev/stune/foreground/schedtune.prefer_idle
+echo 10 > /dev/stune/top-app/schedtune.boost
+echo 1 > /dev/stune/top-app/schedtune.prefer_idle
+
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
 
