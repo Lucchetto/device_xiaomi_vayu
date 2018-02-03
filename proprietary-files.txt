@@ -881,30 +881,6 @@ vendor/bin/pm-service|a1f55c9cbff46641c5bd88a4b73b13638a90c3ed
 vendor/lib64/libperipheral_client.so|6c7629912519840a72b6595d5add2ec6b0e6b8d9
 vendor/lib64/libspcom.so|eef7a179687dfbc4a2d317f4e5c45a3ae64cbd10
 
-# Perf - from vayu
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|88fea0e630507d28e0cf994b0a08d1284b544ae0
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
-vendor/etc/perf/commonresourceconfigs.xml|827c63cb52552af0c19a4735430f98334e1760bf
-vendor/etc/perf/perfboostsconfig.xml|60a1cd031cfcbe752afb95eb7e1898b11a516567
-vendor/etc/perf/perfconfigstore.xml|f7cdc13efd9f79155d0aa2dc960da0dc617a9e2e
-vendor/etc/perf/targetconfig.xml|95f511bb4030b2755a0b340814fe41cccac994ab
-vendor/etc/perf/targetresourceconfigs.xml|bcac95b779250981197349f926a84b67e649aa2f
-vendor/etc/powerhint.xml|f35137c8f5068d03bba832b995e3e89b1ad718c2
-vendor/lib/libperfconfig.so|e51ef56d45b31fe22255140c36c62d5f26932658
-vendor/lib/libperfgluelayer.so|3334930730e67c07afc1b92029c9890ea37b7aa4
-vendor/lib/libperfioctl.so|63f04b528f33a86ea5bf1f1e322f40a54ccc83b0
-vendor/lib/libqti-perfd-client.so|64962dd4d5e8b7fd11927c70778f79ea1cd140dd
-vendor/lib/libqti-perfd.so|2be89db2f47d7c3fd55b845f02ce5caa41ea5db4
-vendor/lib/libqti-util.so|aad9fa70224a7d0c806790e4a274f3a86cd84316
-vendor/lib64/liblearningmodule.so|18b85780776425249556432a8d66b5643feae546
-vendor/lib64/libmeters.so|0501f7afc9629f9e1f39f40714b5292cfdaa82e4
-vendor/lib64/libperfconfig.so|a6417bae7c270aa55746c21fa553f8638e2646e7
-vendor/lib64/libperfgluelayer.so|ab07f0a6ded333726a9c5ae37a38dc91881fa11e
-vendor/lib64/libperfioctl.so|971d8108b9a6d5854be68792dc19a16c37734f59
-vendor/lib64/libqti-perfd-client.so|b6881ca5b77335490bd91c6803feb5d31cbf8e92
-vendor/lib64/libqti-perfd.so|31cb7446a5a1e30b0416f388ebc8bfc3f3223e6e
-vendor/lib64/libqti-util.so|e7e1db6dbd6cfe955a849e758faea6433e3491a1
-
 # Power-off alarm - from vayu
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|5885c09b8446d8b0c1f665bd9522792d79201cd7
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|6508f5708221399eb8bd9754dc49bad32a911e27
