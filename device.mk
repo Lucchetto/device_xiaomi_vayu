@@ -337,10 +337,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
-
 # Pixel Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
