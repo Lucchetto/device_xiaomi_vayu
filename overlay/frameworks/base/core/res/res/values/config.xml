@@ -671,4 +671,7 @@
     <!-- Whether notify fingerprint client of successful cancelled authentication -->
     <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
 
+    <string name="db_default_journal_mode">MEMORY</string>
+    <string name="db_default_sync_mode">OFF</string>
+    <string name="db_wal_sync_mode">OFF</string>
 </resources>
