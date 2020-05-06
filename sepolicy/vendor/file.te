@@ -22,3 +22,7 @@ type proc_last_kmsg, fs_type, proc_type;
 # Powerstats
 type sysfs_power_stats, sysfs_type, fs_type;
 type sysfs_power_stats_ignore, sysfs_type, fs_type;
+
+type public_adsprpcd_file, file_type;
+type proc_tpd_gesture, fs_type, proc_type;
+type sysfs_call_status, sysfs_type, fs_type;
