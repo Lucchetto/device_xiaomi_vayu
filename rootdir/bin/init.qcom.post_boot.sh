@@ -73,9 +73,6 @@ echo 1 > /sys/devices/system/cpu/cpu7/core_ctl/task_thres
 # plus misfit tasks on silver cores) to trigger assitance from gold+.
 echo 1 > /sys/devices/system/cpu/cpu7/core_ctl/nr_prev_assist_thresh
 
-# Disable Core control on silver
-echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
-
 # Setting b.L scheduler parameters
 echo 95 95 > /proc/sys/kernel/sched_upmigrate
 echo 85 85 > /proc/sys/kernel/sched_downmigrate
