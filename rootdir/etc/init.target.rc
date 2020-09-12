@@ -59,6 +59,21 @@ on late-init
     start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
 
+   # Setup permission for Power HAL
+    chown system system /dev/stune/top-app/schedtune.boost
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+    chown system system /sys/class/kgsl/kgsl-3d0/force_rail_on
+    chown system system /sys/class/kgsl/kgsl-3d0/force_clk_on
+    chown system system /sys/class/kgsl/kgsl-3d0/idle_timer
+
+    chmod 0664 /dev/stune/top-app/schedtune.boost
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/force_rail_on
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/force_clk_on
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/idle_timer
+
 on early-fs
     start vold
 
@@ -128,6 +143,7 @@ on boot
 
     # Touchpanel
     chown system system /sys/touchpanel/double_tap
+    chmod 0664 /sys/touchpanel/double_tap
 
     # Thermal
     chown system system /sys/class/thermal/thermal_message/sconfig
