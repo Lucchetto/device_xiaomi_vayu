@@ -176,6 +176,10 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Smartcharge
+TARGET_SMARTCHARGE_CONTROL_NODE := "sys/class/power_supply/battery/input_suspend"
+TARGET_SMARTCHARGE_REVERSE_LOGIC := true
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-05-01
 
