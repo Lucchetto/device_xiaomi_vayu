@@ -46,6 +46,15 @@ on init
     chown system system /sys/class/leds/white/brightness
     chown system system /sys/class/leds/white/breath
 
+on late-init
+    # Start services for bootanimation
+    start surfaceflinger
+    start themed_bootanimation
+    start bootanim
+    start vendor.hwcomposer-2-3
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
+
 on early-fs
     start vold
 
