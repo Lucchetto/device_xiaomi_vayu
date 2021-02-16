@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/vayu
+BOARD_VENDOR := xiaomi
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
