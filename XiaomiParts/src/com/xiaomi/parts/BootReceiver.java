@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.provider.Settings;
 
 import com.xiaomi.parts.kcal.Utils;
+import com.xiaomi.parts.thermal.ThermalUtils;
 
 import java.lang.Math.*;
 
@@ -60,5 +61,9 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
         FileUtils.setValue(DeviceSettings.USB_FASTCHARGE_PATH, Settings.Secure.getInt(context.getContentResolver(),
                 DeviceSettings.PREF_USB_FASTCHARGE, 0));
         context.startService(new Intent(context, DiracService.class));
+
+       // Thermal
+        ThermalUtils.startService(context);
+
     }
 }
