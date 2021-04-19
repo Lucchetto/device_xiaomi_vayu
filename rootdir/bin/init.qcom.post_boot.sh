@@ -174,6 +174,9 @@ setprop vendor.dcvs.prop 1
 echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
 configure_read_ahead_kb_values
 
+# Enable PowerHAL hint processing
+setprop vendor.powerhal.init 1
+
 setprop vendor.post_boot.parsed 1
 
 # Let kernel know our image version/variant/crm_version
