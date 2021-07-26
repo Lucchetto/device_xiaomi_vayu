@@ -159,6 +159,7 @@ on boot
     insmod /vendor/lib/modules/wlan.ko
 
     chown system system /sys/class/thermal/thermal_message/sconfig
+    chmod 0644 /sys/class/thermal/thermal_message/sconfig
 
     chown system system /proc/tp_selftest
     chown system system /sys/class/touch/touch_dev/palm_sensor
