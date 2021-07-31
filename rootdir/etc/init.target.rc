@@ -380,3 +380,7 @@ on post-fs-data
     # Allow system to read measured_fps
     chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
     chmod 0444 /sys/class/drm/sde-crtc-0/measured_fps
+
+# initialize powerHAL when boot is completed
+on property:sys.boot_completed=1
+    setprop vendor.powerhal.init 1
