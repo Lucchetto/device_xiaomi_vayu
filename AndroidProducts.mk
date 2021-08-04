@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_vayu.mk
+    $(LOCAL_DIR)/syberia_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_vayu-user \
-    ssos_vayu-userdebug \
-    ssos_vayu-eng
+    syberia_vayu-user \
+    syberia_vayu-userdebug \
+    syberia_vayu-eng
