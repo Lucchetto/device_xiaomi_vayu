@@ -742,14 +742,6 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so|653cd6cae81499a416d97b9fb920ddcb281
 # IMS - from LA.UM.9.1.r1-10200-SMxxx0.0 (Custom)
 -system_ext/priv-app/ims/ims.apk|7465bb4174bf455e1e1abe13990e14003aa848d2
 
-# IO prefetcher - from vayu
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|df327ba58f5de3291c8cbfce55a22b07e34a2b52
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
-vendor/lib64/libqti-iopd-client.so|3a7d9bb5089d577ae612fa9273ace97da287b381
-vendor/lib64/libqti-iopd.so|9c1358b0021fb8d32cd609e0692792c712708736
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|14a207f6656fc3f1097b3ca21002f7c3a910081a
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|256dfd9f15720ff6899b622fc6d3d4e3d089e69a
-
 # IPA firmware - from vayu
 vendor/etc/init/ipa_fws.rc|f1826b81077f51470c97781823f109f12361ac8b
 vendor/firmware/ipa_fws.b00|27a002d0b54085560b38805fb940d6b960707a48
