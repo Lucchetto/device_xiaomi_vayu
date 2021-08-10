@@ -20,6 +20,8 @@ allow hal_power_default {
   sysfs_kgsl
   sysfs_msm_subsys
   sysfs_scsi_host 
+  sysfs_scsi_host 
+  sysfs_msm_subsys
   sysfs_touchpanel
 }:{
   file
