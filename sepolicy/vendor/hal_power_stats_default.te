@@ -9,6 +9,9 @@ dontaudit hal_power_stats_default sysfs_power_stats_ignore:dir r_dir_perms;
 dontaudit hal_power_stats_default sysfs_power_stats_ignore:file r_file_perms;
 dontaudit hal_power_stats_default sysfs:file read;
 
+get_prop(hal_power_stats_default, exported_wifi_prop) # Needed to detect wifi on/off
+r_dir_file(hal_power_stats_default, sysfs_msm_subsys)
+
 add_service(hal_power_stats_default, hal_power_stats_vendor_service)
 
 vndbinder_use(hal_power_stats)
