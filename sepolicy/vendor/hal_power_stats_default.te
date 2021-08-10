@@ -2,6 +2,12 @@ allow hal_power_stats_default vendor_sysfs_iio:dir r_dir_perms;
 allow hal_power_stats_default vendor_sysfs_iio:file r_file_perms;
 allow hal_power_stats_default sysfs:dir r_dir_perms;
 allow hal_power_stats_default sysfs:file r_file_perms;
+allow hal_power_stats_default sysfs_kgsl:file { r_file_perms getattr };
+
+# The following folders are incidentally accessed by hal_power_stats_default and are not needed.
+dontaudit hal_power_stats_default sysfs_power_stats_ignore:dir r_dir_perms;
+dontaudit hal_power_stats_default sysfs_power_stats_ignore:file r_file_perms;
+dontaudit hal_power_stats_default sysfs:file read;
 
 add_service(hal_power_stats_default, hal_power_stats_vendor_service)
 
