@@ -22,7 +22,7 @@
 namespace {
 int open_ts_input() {
     int fd = -1;
-    DIR *dir = opendir("/dev/input");
+    DIR *dir = opendir("/sys/touchpanel/double_tap");
 
     if (dir != NULL) {
         struct dirent *ent;
@@ -32,7 +32,7 @@ int open_ts_input() {
                 char absolute_path[PATH_MAX] = {0};
                 char name[80] = {0};
 
-                strcpy(absolute_path, "/dev/input/");
+                strcpy(absolute_path, "/sys/touchpanel/double_tap");
                 strcat(absolute_path, ent->d_name);
 
                 fd = open(absolute_path, O_RDWR);
