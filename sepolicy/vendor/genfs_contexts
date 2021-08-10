@@ -128,3 +128,6 @@ genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup                          
 
 # USB fastcharge
 genfscon sysfs /kernel/fast_charge/force_fast_charge      u:object_r:sysfs_fcharge:s0
+
+# Power
+genfscon proc /sys/kernel/sched_energy_aware u:object_r:proc_sched_energy_aware:s0
