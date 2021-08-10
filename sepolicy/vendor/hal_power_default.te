@@ -15,6 +15,7 @@ allow hal_power_default {
   proc
   sysfs_devfreq
   sysfs_devices_system_cpu
+  latency_devic
   sysfs_graphics
   sysfs_kgsl
   sysfs_msm_subsys
@@ -29,6 +30,9 @@ allow hal_power_default latency_device:chr_file rw_file_perms;
 
 # Rule for hal_power_default to access graphics composer process
 unix_socket_connect(hal_power_default, vendor_pps, hal_graphics_composer_default);
+
+type proc_sched_energy_aware, proc_type, fs_type;
+type vendor_power_prop, property_type;
 
 # To get/set powerhal state property
 set_prop(hal_power_default, power_prop)
