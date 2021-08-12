@@ -15,7 +15,7 @@ allow hal_power_default {
   proc
   sysfs_devfreq
   sysfs_devices_system_cpu
-  latency_devic
+  latency_device
   sysfs_graphics
   sysfs_kgsl
   sysfs_msm_subsys
